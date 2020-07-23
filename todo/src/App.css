@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin    : 0;
+  padding   : 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family     : Arial, Helvetica, sans-serif;
+  line-height     : 1.4;
+  display         : flex;
+  justify-content : center;
+  text-align      : center;
+  background-color: rgb(138, 157, 157)
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.container {
+  width          : 70vw;
+  display        : flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top    : 5%;
+  padding-left   : 7%;
+  padding-right  : 7%;
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  color           : white;
+  background-color: rgb(50, 186, 127);
+  padding         : 8px;
+  cursor          : pointer;
+  font-size       : 1.1rem;
+  margin-right    : 2%;
+  height          : 38px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.btn:hover {
+  background: rgb(27, 125, 82);
+  color     : black;
+}
+
+::placeholder {
+  font-size: 1.2rem;
+}
+
+input {
+  border : 1px solid rgb(50, 186, 127);
+  height        : 38px;
+  width         : 350px;
+  padding-top   : 2%;
+  padding-left  : 3%;
+  padding-bottom: 1%;
+}
+
+.todos {
+  width           : auto;
+  display         : flex;
+  justify-content : space-between;
+  background-color: white;
+  border : 3px solid rgb(138, 157, 157);
+}
+
+.clearbtn {
+  border    :1px solid black;
+  cursor    : pointer;
+  padding   : 3px;
+  font-size : 1.1rem;
+  background: rgb(194, 80, 80);
+  color     : white;
+  height    : 38px;
+  width     : 85px;
+  margin    : 1%;
+
+}
+
+.clearbtn:hover {
+  background: rgb(116, 18, 18);
+  color     : black;
+}
+
+li {
+  list-style: none;
+  font-size: 1.2rem;
+  margin   : 2%;
+}
+
+.topOfForm {
+  width          : 100%;
+  display        : flex;
+  justify-content: space-between;
+}
+
+.addTodo {
+  width          : 100%;
+  display        : flex;
+  justify-content: flex-start;
+  margin         : 1%;
+
+}
+
+.done {
+  border          : none;
+  cursor          : pointer;
+  padding         : 8px;
+  font-size       : 1.1rem;
+  color           : black;
+  background-color: rgb(194, 80, 80);
+  height          : 35px;
+  width           : 50px;
+  margin          : 1%;
+
+}
+
+.done:hover {
+  background: rgb(50, 186, 127);
+  color : rgb(10, 85, 53);
 }
